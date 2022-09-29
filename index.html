@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
     </head>
     <body>
+       
+
         <!-- <div class="background-website"></div> -->
         <div class="contain-tree-flower">
             <img class="tree-flower" src="imgs/hoa-dao2.png" />
@@ -65,6 +67,16 @@
             <img class="icon-setting" src="imgs/settings.png" />
             
         </div> -->
+
+ 
+        <audio src="./audio.mp3" allow="autoplay" id="audio" style="display:none"></audio>
+        <script >
+        document.addEventListener('click', musicPlay);
+      function musicPlay() {
+    document.getElementById('audio').play();
+    document.removeEventListener('click', musicPlay);
+      }
+    </script>
     </body>
     <script src="js/displayAll.js"></script>
     <script src="js/objectFly/configFly.js"></script>
