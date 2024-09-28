@@ -3,7 +3,7 @@
 /*----------------------danh sách số từ 0-9 cho từng view phần tử thời gian sao cho đúng nhất------*/
 /**************************************************************************************************/
 var viewRemainTime = function(){
-    this.objRemainTime = new remainTime(2024, 2, 10,00,00,00,00); // Lấy ra mảng chứa các thành phần time còn lại
+    this.objRemainTime = new remainTime(2025,01,29,00,00,00,00); // Lấy ra mảng chứa các thành phần time còn lại
     this.remainTime = []; // Chứa mảng các thành phần thời gian trong thời gian còn lại
     this.listNumberOfViewElementTime = []; // Mảng các danh sách số từ 0-9 trong các view hiển thị phần tử thời gian
     this.viewElementTime = document.getElementsByClassName("element-time"); // Mảng chứa các view phần từ thời gian
@@ -74,9 +74,9 @@ var viewRemainTime = function(){
                             this.elementTime = [34, 14, 10, 27, 36, 36, 36, 36];
                             ++this.x;
                         break;
-                        // Hiển thị dãy số 2021
+                        // Hiển thị dãy số 2025
                         case 3:
-                            this.elementTime = [2, 0, 2, 1 ,36 ,36, 36, 36];
+                            this.elementTime = [2, 0, 2, 5 ,36 ,36, 36, 36];
                             this.x = 0;
                         break;
                     }
